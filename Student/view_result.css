@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(to left, #65b7ff, #ffffff);
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5em;
+}
+
+.filter-card {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.filter-card label {
+    font-weight: bold;
+}
+
+.filter-card input {
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.table-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+tbody tr:hover {
+    background-color: #f0f8ff;
+}

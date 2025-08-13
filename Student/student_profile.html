@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #2c5364, #4ca1af);
+      color: #000;
+      text-align: center;
+    }
+
+    .student-card {
+      margin: 30px auto;
+      padding: 30px;
+      background: radial-gradient(circle at center, #a1ffce, #faffd1);
+      border-radius: 20px;
+      width: 60%;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .student-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 2px solid #008000;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: bold;
+      color: green;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #c8f7c5;
+      transform: scale(1.05);
+    }
+
+    .button img {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .button:hover img,
+    .button:active img {
+      transform: scale(1.4);
+      filter: hue-rotate(100deg);
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    table.student-details {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 60%;
+      margin-top: 15px;
+    }
+
+    table.student-details th,
+    table.student-details td {
+      border: 2px solid #006400;
+      padding: 10px;
+      background-color: #eaffea;
+    }
+
+    th {
+      background-color: #c6f5d3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="student-card">
+    <img src="student_media/student1.png" alt="Student Image" class="student-img" />
+    <div class="description">This is your student space.</div>
+
+    <div class="button-row">
+      <div class="button">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="tick" />
+        My Courses
+      </div>
+      <div class="button">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="tick" />
+        Student List
+      </div>
+      <div class="button">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="tick" />
+        View Results
+      </div>
+    </div>
+
+    <h2>Student Details</h2>
+    <table class="student-details">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Roll No</th>
+        <th>Batch</th>
+      </tr>
+      <tr>
+        <td>Upendra</td>
+        <td>upendra@gmail.com</td>
+        <td>30679</td>
+        <td>2024</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

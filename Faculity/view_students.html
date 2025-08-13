@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-wise Students</title>
+    <link rel="stylesheet" href="view_students.css">
+</head>
+<body>
+    <h1>Course-wise Student List</h1>
+
+    <div class="faculty-card">
+        <form class="filters">
+            <select>
+                <option>Course</option>
+                <option>24se122</option>
+                <option>24MT2019</option>
+            </select>
+            <select>
+                <option>Section</option>
+                <option>A</option>
+                <option>B</option>
+            </select>
+            <select>
+                <option>AY</option>
+                <option>2024-25</option>
+            </select>
+            <select>
+                <option>Semester</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <button type="submit">Filter</button>
+        </form>
+
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>StudentID</th>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R589</td>
+                    <td>SIVA YADAV</td>
+                    <td>22MB425</td>
+                    <td>SIVA@university.edu</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>R624</td>
+                    <td>SAI RAM</td>
+                    <td>22CR412</td>
+                    <td>RAM@university.edu</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

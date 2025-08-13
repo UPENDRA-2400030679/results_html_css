@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Management</title>
+    <link rel="stylesheet" href="results.css">
+    <script>
+        function updateTotalAndGrade() {
+            const internal = parseInt(document.getElementById("internal").value) || 0;
+            const external = parseInt(document.getElementById("external").value) || 0;
+            const total = internal + external;
+            document.getElementById("total").value = total;
+
+            let grade = "";
+            if (total >= 90) grade = "A+";
+            else if (total >= 80) grade = "A";
+            else if (total >= 70) grade = "B+";
+            else if (total >= 60) grade = "B";
+            else if (total >= 50) grade = "C";
+            else grade = "F";
+
+            document.getElementById("grade").value = grade;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Result Management</h1>
+
+    <div class="admin-card">
+        <h2>Insert Result</h2>
+        <form>
+            <label>Course*: <input type="text" placeholder="Enter course name/code"></label><br><br>
+            <label>Student*: <input type="text" placeholder="Enter student name"></label><br><br>
+            <label>Internal (0–40): <input type="number" id="internal" max="40" oninput="updateTotalAndGrade()" placeholder="Max 40"></label><br><br>
+            <label>External (0–60): <input type="number" id="external" max="60" oninput="updateTotalAndGrade()" placeholder="Max 60"></label><br><br>
+            <label>Total: <input type="number" id="total" readonly></label><br><br>
+            <label>Grade: <input type="text" id="grade" readonly></label><br><br>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <div class="admin-card">
+        <h2>Result List</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>ResultID</th>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Internal</th>
+                <th>External</th>
+                <th>Total</th>
+                <th>Grade</th>
+                <th>AY</th>
+                <th>Semester</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Azgar Ali</td>
+                <td>CSE101</td>
+                <td>25</td>
+                <td>65</td>
+                <td>90</td>
+                <td>A+</td>
+                <td>2024-25</td>
+                <td>1</td>
+                <td>Edit | Delete</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

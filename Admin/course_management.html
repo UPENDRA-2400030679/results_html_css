@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="coursemanagement.css">
+</head>
+<body>
+
+    <h1>Course Management</h1>
+
+    <div class="admin-card">
+        <h2>Course List</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>CourseID</th>
+                <th>Code</th>
+                <th>Title</th>
+                <th>Credits</th>
+                <th>Department</th>
+                <th>Semester</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>1</td><td>CSE101</td><td>Intro to CS</td><td>4</td><td>CSE</td><td>1</td><td>Edit | Delete</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="admin-card">
+        <h2>Add / Edit Course</h2>
+        <form>
+            <label>Code*: <input type="text"></label><br><br>
+            <label>Title*: <input type="text"></label><br><br>
+            <label>Description: <textarea></textarea></label><br><br>
+            <label>Credits*: <input type="number"></label><br><br>
+            <label>Department*: <input type="text"></label><br><br>
+            <label>Semester*: <input type="number"></label><br><br>
+            <label>Year*: <input type="number"></label><br><br>
+            <button type="submit">Save</button>
+            <button type="reset">Reset</button>
+            <button type="button">Cancel</button>
+        </form>
+    </div>
+
+</body>
+</html>

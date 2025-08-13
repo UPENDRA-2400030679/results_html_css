@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(to left, #65b7ff, #ffffff);
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+.admin-card {
+    background: #fff;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.admin-card:hover {
+    background: radial-gradient(aquamarine, #fff);
+    transform: scale(1.05);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+  background-color: lightblue;
+  transition: width 0.4s ease-in-out;
+}

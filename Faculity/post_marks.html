@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Marks</title>
+    <link rel="stylesheet" href="post_marks.css">
+    <script>
+        function calculateMarks(row) {
+            const internal = parseInt(row.querySelector(".internal").value) || 0;
+            const external = parseInt(row.querySelector(".external").value) || 0;
+            const totalField = row.querySelector(".total");
+            const gradeField = row.querySelector(".grade");
+
+            const total = internal + external;
+            totalField.value = total;
+
+            let grade = "";
+            if (total >= 90) grade = "A+";
+            else if (total >= 80) grade = "A";
+            else if (total >= 70) grade = "B+";
+            else if (total >= 60) grade = "B";
+            else if (total >= 50) grade = "C";
+            else grade = "F";
+
+            gradeField.value = grade;
+        }
+    </script>
+</head>
+<body>
+    <h1>Post Marks - CSE101</h1>
+
+    <div class="marks-card">
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Internal (0–40)</th>
+                    <th>External (0–60)</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>STU001</td>
+                    <td>Azgar Ali</td>
+                    <td><input type="number" class="internal" max="40" oninput="calculateMarks(this.closest('tr'))"></td>
+                    <td><input type="number" class="external" max="60" oninput="calculateMarks(this.closest('tr'))"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td><input type="text" class="grade" readonly></td>
+                    <td><button>Save</button></td>
+                </tr>
+                <tr>
+                    <td>STU002</td>
+                    <td>Ravi Kumar</td>
+                    <td><input type="number" class="internal" max="40" oninput="calculateMarks(this.closest('tr'))"></td>
+                    <td><input type="number" class="external" max="60" oninput="calculateMarks(this.closest('tr'))"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td><input type="text" class="grade" readonly></td>
+                    <td><button>Save</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="view_results.css">
+</head>
+<body>
+    <h1>Results</h1>
+
+    <div class="faculty-card">
+        <h2>Insert Results</h2>
+        <form>
+            <select required>
+                <option>Course*</option>
+                <option>24se122</option>
+                <option>24MT2019</option>
+            </select>
+            <input type="text" placeholder="Student*" required>
+            <input type="number" placeholder="Internal Marks">
+            <input type="number" placeholder="External Marks">
+            <input type="text" placeholder="Remarks">
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <div class="faculty-card">
+        <h2>View Results</h2>
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>ResultID</th>
+                    <th>Student</th>
+                    <th>Course</th>
+                    <th>Internal</th>
+                    <th>External</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                    <th>AY</th>
+                    <th>Semester</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>R589</td>
+                    <td>SIVA YADAV</td>
+                    <td>24se122</td>
+                    <td>30</td>
+                    <td>70</td>
+                    <td>90</td>
+                    <td>A</td>
+                    <td>2024-25</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
